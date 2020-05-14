@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+}
+
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.header {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.header {
+  overflow: visible;
+  background-color: white;
+}
+.header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navigation-container {
+  direction: rtl;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation {
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid #8bc34a;
+}
+
+.be-together-section {
+  position: relative;
+  height: 400px;
+  width: auto;
+  background-color: #f3f3f3;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
+
+.card-container .mdl-card__media img {
+  width: 100%;
+}
+
+.card-container .mdl-card__title {
+  background: transparent;
+  height: auto;
+}
+
+.card-container .mdl-card__title-text {
+  color: black;
+  height: auto;
+}
+
+.card-container .mdl-card__supporting-text {
+  height: auto;
+  color: black;
+  padding-bottom: 56px;
+}
+
+.card-container .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
+
+.card-container .mdl-card__actions a {
+  border-top: none;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.footer a:hover {
+  color: #8bc34a;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .navigation-container {
+    display: none;
+  }
+
+  .title {
+    display: none !important;
+  }
+
+  .be-together-section {
+    height: 80px;
+  }
+
+  .slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
